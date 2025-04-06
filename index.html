@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MatchWork – Conectá talento con oportunidad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #388E3C;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1581093448790-40e81bdbba22?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      color: white;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #388E3C;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .btn {
+      display: inline-block;
+      background: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MatchWork</h1>
+    <p>Conectá talento con oportunidad</p>
+  </header>
+
+  <nav>
+    <a href="#justificacion">Justificación</a>
+    <a href="#funcionalidades">Funcionalidades</a>
+    <a href="#registro">Registro</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Encontrá trabajo o encontrá quien lo haga<br>de forma rápida y segura</h1>
+  </section>
+
+  <section id="justificacion">
+    <h2 class="section-title">¿Por qué MatchWork?</h2>
+    <p>Las plataformas actuales no responden a la demanda de trabajos informales o por tiempo parcial. MatchWork nace para brindar una solución accesible, geolocalizada y eficiente para conectar personas que ofrecen servicios con quienes los necesitan, eliminando la burocracia y simplificando el proceso.</p>
+  </section>
+
+  <section id="funcionalidades">
+    <h2 class="section-title">Funcionalidades Clave</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>👥 Registro y Perfil</h3>
+        <p>Alta de usuarios como ofertantes o demandantes, con datos clave como ubicación, experiencia, rubro y disponibilidad.</p>
+      </div>
+      <div class="card">
+        <h3>🤝 Sistema de Match</h3>
+        <p>Deslizá perfiles relevantes y conectá con quienes también te elijan. ¡Si hay interés mutuo, se activa el chat!</p>
+      </div>
+      <div class="card">
+        <h3>🗺 Geolocalización</h3>
+        <p>Visualizá opciones cercanas o filtrá por trabajos remotos para encontrar lo que mejor se adapte a vos.</p>
+      </div>
+      <div class="card">
+        <h3>💬 Chat Interno</h3>
+        <p>Conversaciones simples, seguras y con mensajes rápidos para coordinar trabajos fácilmente.</p>
+      </div>
+      <div class="card">
+        <h3>📅 Agenda y Estado</h3>
+        <p>Marcá tu disponibilidad, organizá fechas de trabajo y recibí recordatorios para estar siempre al día.</p>
+      </div>
+      <div class="card">
+        <h3>⭐ Calificaciones</h3>
+        <p>Valoraciones entre usuarios que fortalecen la confianza y mejoran la calidad del servicio en la plataforma.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="registro">
+    <h2 class="section-title">¿Querés ser parte?</h2>
+    <p>Muy pronto podrás registrarte como ofertante o demandante. Mientras tanto, dejá tu correo y te avisamos cuando esté disponible:</p>
+    <form>
+      <input type="email" placeholder="Ingresá tu email" required style="padding: 10px; width: 60%; max-width: 400px;">
+      <button type="submit" class="btn">Notificarme</button>
+    </form>
+  </section>
+
+  <footer id="contacto">
+    <p>MatchWork © 2025 – Todos los derechos reservados</p>
+    <p>Contacto: info@matchwork.com</p>
+  </footer>
+
+</body>
+</html>
